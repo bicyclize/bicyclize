@@ -123,7 +123,7 @@
 	}
 	
 	.color-text {
-		color: #53c74a;
+		color: #84fc7b;
 	}
 	
 	.white-text {
@@ -393,6 +393,7 @@
 	}
 	
 	.parallax-title {
+		color: #fff;
 		z-index: 200;
 		position: relative;
 		font-size: 36px;
@@ -404,14 +405,11 @@
 	}
 	
 	.parallax-title a {
-		border-bottom: 1px solid #1a3e17;
+		border-bottom: 1px solid #84fc7b;
+		color: #84fc7b;
 	}
 	
-	.parallax-title a:hover {
-		color: #fff;
-		border-bottom: 1px solid #fff;
-		text-decoration: none;
-	}
+	
 	
 	#twitter-parallax {
 		z-index: 200;
