@@ -18,7 +18,7 @@
 	<link rel="icon" 
       type="image/png" 
       href="bike.png">
-      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
 	<!--[if lt IE 10]>
 		<link href= "css/ie.css" rel= "stylesheet" media= "all" />
 	<![endif]-->
@@ -301,7 +301,7 @@
 				<div class="row">
 					<div class="span8">
 						<div class="row">
-						<div id="mapblack" style="height: 400px">
+						<div id="mapid" class="span8" style="height: 400px">
 						</div>
 						</div>
 						<!--div class="span3 left-pull">
@@ -362,7 +362,6 @@
 	<script src="js/contact.js"></script> <!-- Feedback form -->
 	<script type="text/javascript" src="js/jmpress.min.js"></script>
 	<script type="text/javascript" src="js/jquery.jmslideshow.js"></script>
-	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			var jmpressOpts	= {
@@ -377,24 +376,23 @@
 												
 			});
 	</script>
-		<script async src="//platform.twitter.com/widgets.js" charset="utf-8">
-		</script>
-		<script>
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-		
 
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script>
 
 		var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
 });
 
-		var map = L.map('mapblack', {
+		var map = L.map('mapid', {
 		  scrollWheelZoom: false,
 		  center: [52.38472, 4.90368],
 		  zoom: 13
 		});
-		L.marker([52.38398, 4.90304],).addTo(map)
-			.bindPopup("<b>Dantesoftware</b><br />A-Lab");
+		L.marker([52.38398, 4.90304]).addTo(map)
+			.bindPopup("<b>Bicyclize</b><br />A-Lab");
 		
 		map.addLayer(layer);
 	</script>
