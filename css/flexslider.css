@@ -72,8 +72,8 @@ html[xmlns] .slides {display: block;}
 	
 .slider-text {position: absolute; overflow: hidden; min-height: 60px; bottom: 0; padding-left: 40px; padding-right: 50%; padding-bottom: 36px; box-sizing: border-box; -webkit-font-smoothing: antialiased;}
 .slider-title {font-size: 18px; line-height: 1.4; letter-spacing: 2px; text-transform: uppercase; font-weight: normal; color: #1a3e17; font-family: 'Montserrat', 'Trebuchet MS', sans-serif; border-bottom: 1px solid #1a3e17; -webkit-font-smoothing: antialiased;}
-a.slider-title:hover {color: #84fc7b; border-bottom: 1px solid #84fc7b;}
-.slider-desc { font-size: 14px; color: #84fc7b; line-height: 1.4; margin-top: 16px;}
+a.slider-title:hover {color: #1a3e17; border-bottom: 1px solid #84fc7b;}
+.slider-desc { font-size: 14px; color: #1a3e17; line-height: 1.4; margin-top: 16px;}
 
 
 /* Direction Nav */
