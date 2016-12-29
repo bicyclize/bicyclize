@@ -1,680 +1,729 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en-US">
 <head>
-	<meta charset="utf-8" />
-	
-	<title>Bicyclize</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<meta name="HandheldFriendly" content="true">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-	
-	<!-- Import CSS -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/jms-style.css">
-	<link rel="icon" 
-      type="image/png" 
-      href="bike.png">
-     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
-	<!--[if lt IE 10]>
-		<link href= "css/ie.css" rel= "stylesheet" media= "all" />
-	<![endif]-->
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Bicyclize" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Bicyclize</title>
+
 </head>
 
-<body>
+<body class="stretched">
 
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
 
-	<!-- Start Homepage -->
-	<header id="home">
-		<div class="header-bg"></div>
-		<div class="pattern"></div>
-		<div class="container">
-			<div class="row">
-				<div class="span4">
-					<a href="index.html" class="logo"><img src="" alt=""></a>
-				</div>
-				<!-- Navigation -->
-				<nav id="topnav" class="span8">
-					<ul id="fixed-nav" class="visible-desktop">
-						<li class="current scroll-link"><a href="#home">Home</a></li>
-						<li><a class="scroll-link" href="#about">About</a></li>
-						<li><a class="scroll-link" href="#services">Services</a></li>
-						<li><a class="scroll-link" href="#tools">Tools</a></li>
-						<li><a class="scroll-link" href="#portfolio">Portfolio</a></li>
-						<li><a class="scroll-link" href="#contact">Contact</a></li>
-						<li><a class="external" href="jobs.html">Vacancies</a></li>
-						<li><a class="external" href="http://blog.bicyclize.com">Blog</a></li>
-					</ul>
-				</nav>
-				<!-- End Navigation -->
-			</div>
-			<div class="row">
-				<div class="span12">
-					<div id="slidecaption">
-						<span class="color-text">Bicyclize your city</span> 
-						<div class="lead-small">Tools for Enabling cycling</div>
-						<a href="#about" class="btn white scroll-link">Get started</a>
+		<div id="home" class="page-section" style="position:absolute;top:0;left:0;width:100%;height:200px;z-index:-2;"></div>
+
+		<section id="slider" class="slider-parallax full-screen with-header swiper_wrapper clearfix">
+
+			<div class="slider-parallax-inner">
+
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark" style="background-image: url('pictures/large/inRain.jpeg');">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 data-caption-animate="fadeInUp"><span>Bicyclize</span></h2>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200">Transport Planning &amp; Urban Design for Cycling</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide dark" style="background-image: url('pictures/large/temp.png'); background-position: center top;">
+							<div class="container clearfix">
+								<div class="slider-caption">
+									<h2 data-caption-animate="fadeInUp">From <span>temporary</span> pilot projects</h2>
+									
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide dark" style="background-image: url('pictures/large/cycleLane.png'); background-position: center top;">
+							<div class="container clearfix">
+								<div class="slider-caption">
+									<h2 data-caption-animate="fadeInUp">To <span>permanent</span> solutions</h2>
+									
+								</div>
+							</div>
+						</div>
+
 					</div>
+					<div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
+					<div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
+					<div id="slide-number"><div id="slide-number-current"></div><span>/</span><div id="slide-number-total"></div></div>
 				</div>
+
 			</div>
-		</div>
-	</header>
 
+		</section>
 
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header">
 
-	<div class="wrapper">
-	
-		<!-- Start Sticky Navigation -->
-		<nav id="mainnav">
-			<div class="container">
-				<div class="row">
-					<div class="span4">
-						<a href="index.html" class="logo"><img src="" alt=""></a>
-					</div>
-					<div class="span8">
-						<ul id="fluid-nav" class="fluid-navigation visible-desktop">
-							<li class="current"><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#services">Services</a></li>
-							<li><a class="scroll-link" href="#tools">Tools</a></li>
-							<li><a class="scroll-link" href="#portfolio">Portfolio</a></li>
-						<li><a class="scroll-link" href="#contact">Contact</a></li>
-						<li><a class="external" href="jobs.html">Vacancies</a></li>
-						<li><a class="external" href="http://blog.bicyclize.com">Blog</a></li>
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<!--div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Bicyclize"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Bicyclize"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1500">
+							<li><a href="#" data-href="#home"><div>Home</div></a></li>
+							<li><a href="#" data-href="#section-about"><div>About</div></a></li>
+							<li><a href="#" data-href="#section-work"><div>Portfolio</div></a></li>
+							<li><a href="#" data-href="#section-team"><div>Team</div></a></li>
+							<li><a href="#" data-href="#section-services"><div>Services</div></a></li>
+							
+							<li><a href="http://blog.Bicyclize.com" target="_blank"  ><div>Blog</div></a></li>
+							<!--li><a href="#" data-href="#section-testimonials" data-offset="60"><div>Testimonials</div></a></li-->
+							<li><a href="#" data-href="#section-team"><div>Contact</div></a></li>
 						</ul>
-					</div>
+
+						<!-- Top Search
+						============================================= -->
+						<div id="top-search">
+							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+							<form action="search.html" method="get">
+								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+							</form>
+						</div><!-- #top-search end -->
+
+					</nav><!-- #primary-menu end -->
+
 				</div>
+
 			</div>
-		</nav>
-		<!-- End Sticky Navigation -->
-		
-		
-		<!-- Start About Page -->
-		<section id="about" class="page page-gray">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title">Why <span class="color-text">bicyclize</span>?</div>
-						<hr>
-						<p class="lead-small">Our transport systems are challenged by today's rapid urbanisation. According to the UN, the world urban population is expected to increase further by 72 per cent by 2050. By mid-century the world urban population will likely be the same size as the world’s total population was in 2002.
-						</p>
 
+		</header><!-- #header end -->
 
-						<div class="container">
+		<div class="clear"></div>
 
-				<div class="row">
-					<div class="span6">
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<section id="section-about" class="page-section">
+
+					<div class="container clearfix">
+
+						<div class="heading-block center">
+							<h2>We are <span>Bicyclize</span></h2>
+							<span>Providing traffic easing transport solutions with the help of active transport</span>
+						</div>
+
+						<div class="col_one_third nobottommargin">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="images/services/1.jpg" alt="Why choose Us?">
+								</div>
+								<div class="fbox-desc">
+									<h3>Why choose Us.<span class="subtitle"></span></h3>
+									<p>Multidisciplinary overview of client needs with respect to economics, well-being, local culture.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col_one_third nobottommargin">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="images/services/2.jpg" alt="Why choose Us?">
+								</div>
+								<div class="fbox-desc">
+									<h3>Our Mission.<span class="subtitle"></span></h3>
+									<p>We are exporting Dutch and international transport expertise for cities that want to learn from mistakes of developped countries.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col_one_third nobottommargin col_last">
+							<div class="feature-box media-box">
+								<div class="fbox-media">
+									<img src="images/services/3.jpg" alt="Why choose Us?">
+								</div>
+								<div class="fbox-desc">
+									<h3>What we Do.<span class="subtitle"></span></h3>
+									<p>We provide transport solutions for the needs of the 21st century traveller.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
+					</div>
+
+					<div class="section dark parallax nobottommargin" style="padding: 80px 0;background-image: url('pictures/large/underpassDark.png');" data-stellar-background-ratio="0.3">
+
+						<div class="container clearfix">
+
+							<div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
+								<i class="i-plain i-xlarge divcenter nobottommargin icon-dollar"></i>
+								<div class="counter counter-lined"><span data-from="100" data-to="6300" data-refresh-interval="50" data-speed="2000"></span>%</div>
+								<h5>Cost-to-Benefit ratio of Dutch infrastructure investment</h5>
+							</div>
+
+							<div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="200">
+								<i class="i-plain i-xlarge divcenter nobottommargin icon-star"></i>
+								<div class="counter counter-lined"><span data-from="0" data-to="50" data-refresh-interval="100" data-speed="2500"></span>Times</div>
+								<h5>More cycle lane can be built by same road investment to a dual carriageway</h5>
+							</div>
+
+							<div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="400">
+								<i class="i-plain i-xlarge divcenter nobottommargin icon-user"></i>
+								<div class="counter counter-lined"><span data-from="0" data-to="1250000" data-refresh-interval="100" data-speed="3500"></span></div>
+								<h5>The number of people killed on the roads by vehicle use</h5>
+							</div>
+
+							<div class="col_one_fourth nobottommargin center col_last" data-animate="bounceIn" data-delay="600">
+								<i class="i-plain i-xlarge divcenter nobottommargin icon-truck"></i>
+								<div class="counter counter-lined"><span data-from="20" data-to="100" data-refresh-interval="100" data-speed="2700"></span>billion</div>
+								<h5>Euros lost annually by the effects of congestion in the EU</h5>
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section id="section-work" class="page-section topmargin-lg">
+
+					<div class="heading-block center">
+						<h2>Our Works</h2>
 						
-						<div class="embed-container"><img src="img/car.gif" loop=infinite></div>
+					</div>
+
+					<div class="container clearfix center">
+
+						<!-- Portfolio Items
+						============================================= -->
+						<div id="portfolio" class="portfolio portfolio-nomargin clearfix">
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<a >
+										<img src="portfolio/Regional.png" alt="Regional Poster">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="portfolio/Regional.png" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a>London Thames Gateway</a></h3>
+									<span><a href="#">Master Planning</a>, <a href="#">Transport</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<a >
+										<img src="portfolio/SLLV.png" alt="Regional Poster">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="portfolio/SLLV.png" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a>Southern Lower Lea Valley</a></h3>
+									<span><a href="#">Master Planning</a>, <a href="#">Urban planning</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<a >
+										<img src="portfolio/cars.png" alt="Number of Cars in Wards">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="portfolio/cars.png" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a>Parking Assessment London</a></h3>
+									<span><a href="#">Housing Analytics</a>, <a href="#">GIS</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<a >
+										<img src="portfolio/noCar.png" alt="No car household ratios">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="portfolio/noCar.png" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a>Parking Assessment London</a></h3>
+									<span><a href="#">Analytics</a>, <a href="#">GIS</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<a >
+										<img src="portfolio/oneCar.png" alt="One Car ratio households">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="portfolio/oneCar.png" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a>Parking Assessment London</a></h3>
+									<span><a href="#">Analytics</a>, <a href="#">GIS</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<a >
+										<img src="portfolio/PTAL.png" alt="Total popuation in Low PTAL areas ">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="portfolio/PTAL.png" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a>Parking Assessment London</a></h3>
+									<span><a href="#">Analytics</a>, <a href="#">GIS</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<a >
+										<img src="portfolio/road4People.jpeg" alt="Road analytics">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="portfolio/road4People.jpeg" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a>Surface Assessment London</a></h3>
+									<span><a href="#">Analytics</a>, <a href="#">GIS</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<a >
+										<img src="portfolio/road4Cars.jpeg" alt="Road analytics">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="portfolio/road4Cars.jpeg" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a>Surface Assessment London</a></h3>
+									<span><a href="#">Analytics</a>, <a href="#">GIS</a></span>
+								</div>
+							</article>
+							
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<a >
+										<img src="portfolio/Sliema.png" alt="Preliminary Design">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="portfolio/Sliema.png" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a>Sliema Cycle Corridor</a></h3>
+									<span><a href="#">Planning</a>, <a href="#">Design</a></span>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media pf-icons">
+								<div class="portfolio-image">
+									<a >
+										<img src="portfolio/BRT.png" alt="Bus Rapid Transit Preliminary Corridor">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="portfolio/BRT.png" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a>BRT Corridor</a></h3>
+									<span><a href="#">Planning</a>, <a href="#">GIS</a></span>
+								</div>
+							</article>
+
+						</div><!-- #portfolio end -->
 
 					</div>
-						<div class="span6">
-						<!-- Start Tabs -->
-						<h3>Cycling as transport</h3>
-						<div class="tabs">
-							<ul>
-								<li id="tab1" class="current">Automated vehicles</li>
-								<li id="tab2">Efficiency</li>
-								<li id="tab3">Speed</li>
-								<li id="tab4">Social equity</li>
-								<li id="tab5">Freedom</li>
-							</ul>
-							<div class="tab-content-wrp">
-		    					<div id="tab1-content" class="tab-content active">
-		    						<p>While automated vehicles will substantially improve the space demand of current motorisation, the safety measures in automated vehicles will also improve percieved cycling and pedestrian safety, further improving attractiveness to cycling</p>
-		    						<p>Furthermore the smooth flow of interconnected automated vehicles will require the elimination of road users that are not communicating with them, eg. pedestirans and cyclists. There is a strong incentive to increase the number of attractive segregated cycle lanes, to move cycling to alternative routes, resulting on smoother automated vehicle flow, but consequently attracting more cycling.</p>
-		    					</div>
-		    					<div id="tab2-content" class="tab-content">
-		    						<p>Proper cycling infrastructure provision benefits all transport modes easing the pressure from public transit and motorised road use. Attracting drivers to cycle shorter trips means less congestion for those who are less flexible in chosing alternative modes.</p>
-		    					</div>
-		    					<div id="tab3-content" class="tab-content">
-		    						<p>Cycling is fastest mode of transport mode in many congested cities. Beside the direct journey speed, if one consideres the time spent on purchasing access i.e. a bicycle vs vehicle, the time saved on not needing to spend extensive amounts on transport puts cycling in the very top.</p>
-		    					</div>
-		    					<div id="tab4-content" class="tab-content">
-		    						<p>While public funding finances transport infrastructure the individual may only benefit from investment if uses it. In the UK, a heavily motorised society, less than half of the nation drives and less than a quarter does daily more than 10km. Consequently the majority of population subsidise these beneficiaries. </p>
-		    						<p>Cycling infrastructure requires no substansive additional investment from individual. 
-		    					</div>
-		    					<div id="tab5-content" class="tab-content">
-		    						<p>Cycling offers the flexibility to travel without any schedule and with no additional costs.</p>
-		    					</div>
+
+				</section>
+
+				<section id="section-team" class="page-section topmargin-lg">
+
+					<div class="heading-block center">
+						<h2>Our Team</h2>
+						
+					</div>
+
+					<div class="container clearfix">
+
+						<div class="col-md-6 bottommargin">
+
+							<div class="team team-list clearfix">
+								<div class="team-image">
+									<img src="pictures/peter.png" alt="Peter Biczok">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>Peter Biczok, M.Sc.</h4><span>Transport Planner</span></div>
+									<div class="team-content"></div>
+									
+									
+									<a href="mailto:peter@bicyclize.com" class="social-icon si-rounded si-small si-light si-mail">
+										<i class="icon-email2"></i>
+										<i class="icon-email2"></i>
+									</a>
+									<a href="https://nl.linkedin.com/in/peterbiczok" target="_blank" class="social-icon si-rounded si-small si-light si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+									
+									<a href="#" class="social-icon si-rounded si-small si-skype">
+										<i class="icon-skype"></i>
+										<i class="icon-skype"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-6 bottommargin">
+
+							<div class="team team-list clearfix">
+								<div class="team-image">
+									<img src="pictures/andrew.png" alt="Andrew Reynolds">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>Andrew Reynolds</h4><span>Urban Planner</span></div>
+									<div class="team-content"></div>
+									<a href="mailto:andrew@bicyclize.com" class="social-icon si-rounded si-small si-light si-mail">
+										<i class="icon-email2"></i>
+										<i class="icon-email2"></i>
+									</a>
+									
+									
+									<a href="https://uk.linkedin.com/in/andrewwreynolds" class="social-icon si-rounded si-small si-flickr">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="clear"></div>
+
+						<div class="fancy-title title-border title-center topmargin-sm">
+							<h4>Our expertise</h4>
+						</div>
+
+						<div class="col_one_fourth nobottommargin center">
+							<div class="rounded-skill" data-color="#D01C1C" data-size="150" data-percent="90" data-width="2" data-animate="3000">
+								<div class="counter counter-inherit"><span data-from="1" data-to="90" data-refresh-interval="50" data-speed="3000"></span>%</div>
+							</div>
+							<h5>Transport Planning</h5>
+						</div>
+
+						<div class="col_one_fourth nobottommargin center">
+							<div class="rounded-skill" data-color="#1770A4" data-size="150" data-percent="75" data-width="2" data-animate="3000">
+								<div class="counter counter-inherit"><span data-from="1" data-to="75" data-refresh-interval="50" data-speed="3000"></span>%</div>
+							</div>
+							<h5>Urban Design</h5>
+						</div>
+
+						<div class="col_one_fourth nobottommargin center">
+							<div class="rounded-skill" data-color="#6A89AA" data-size="150" data-percent="85" data-width="2" data-animate="3000">
+								<div class="counter counter-inherit"><span data-from="1" data-to="85" data-refresh-interval="50" data-speed="3000"></span>%</div>
+							</div>
+							<h5>GIS Analytics</h5>
+						</div>
+
+						<div class="col_one_fourth nobottommargin center col_last">
+							<div class="rounded-skill" data-color="#248673" data-size="150" data-percent="80" data-width="2" data-animate="3000">
+								<div class="counter counter-inherit"><span data-from="1" data-to="80" data-refresh-interval="50" data-speed="3000"></span>%</div>
+							</div>
+							<h5>Research</h5>
+						</div>
+
+					</div>
+
+					<div class="section parallax" style="background-image: url('pictures/large/kidsLight.png'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+						<div class="heading-block center nobottomborder nobottommargin">
+							<h2>"If you fail to plan you are planning to fail"</h2>
+							<p>― Benjamin Franklin</p>
+						</div>
+					</div>
+
+				</section>
+
+				<section id="section-services" class="page-section topmargin-lg">
+
+					<div class="heading-block center bottommargin-lg">
+						<h2>Our Services</h2>
+						
+					</div>
+
+					<div class="container clearfix">
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-study"></i></a>
+								</div>
+								<h3>Policy Advisory</h3>
+								<p>Contemporary transport policy coupled with latest technology</p>
 							</div>
 						</div>
-						<!-- End Tabs -->			
-					</div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn" data-delay="200">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-map"></i></a>
+								</div>
+								<h3>Transport Planning</h3>
+								<p>Planning for all modes of transport, including pedestrians and cyclists.</p>
 							</div>
 						</div>
+
+						<div class="col_one_third col_last">
+							<div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn" data-delay="400">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-note"></i></a>
+								</div>
+								<h3>Appraisal</h3>
+								<p>Identifying funding sources and covering the entire lifecycle of project delivery</p>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn" data-delay="200">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-phone2"></i></a>
+								</div>
+								<h3>Technology Consulting</h3>
+								<p>We keep up with the market so that you can focus on your local needs</p>
+							</div>
+						</div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn" data-delay="800">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-arrow-right"></i></a>
+								</div>
+								<h3>Bicycle import</h3>
+								<p>Managing second-hand bicycle imports from the Netherlands</p>
+							</div>
+						</div>
+
+						<div class="col_one_third col_last">
+							<div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn" data-delay="1000">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-lock"></i></a>
+								</div>
+								<h3>Smart locks</h3>
+								<p>Leasing GPS enabled smart locks to host bicycle networks.</p>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn" data-delay="400">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-location"></i></a>
+								</div>
+								<h3>GIS Analytics</h3>
+								<p>Using opensource solutons when we can, to minimise costs and yet deliver outsanding analytics</p>
+							</div>
+						</div>
+
+						<div class="col_one_third ">
+							<div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn" data-delay="1600">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-camera"></i></a>
+								</div>
+								<h3>Infrastructure Assessment</h3>
+								<p>Deploying latest technology computer vision to assess critical areas for development.</p>
+							</div>
+						</div>
+					
+						<div class="col_one_third col_last">
+							<div class="feature-box fbox-center fbox-effect nobottomborder" data-animate="fadeIn" data-delay="1400">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-calculator"></i></a>
+								</div>
+								<h3>Transport Analytics</h3>
+								<p>Modelling and visualising real mobility data to have a hollistic understanding of all modes of travellers.</p>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
 					</div>
-				</div>
+
+					<div class="divider divider-short divider-center topmargin-lg"><i class="icon-star3"></i></div>
+
+				</section>
+
+				<section id="section-pricing" class="page-section topmargin-lg">
+
+					
+
+				</section>
+
+				<section id="section-testimonials" class="page-section section parallax dark" style="background-image: url('pictures/large/restaurants.png'); padding: 200px 0;" data-stellar-background-ratio="0.3">
+
+					<div class="container clearfix">
+
+						<div class="col_half nobottommargin">&nbsp;</div>
+
+						<!--div class="col_half nobottommargin col_last">
+
+							<div class="heading-block center">
+								<h4>What Studies say?</h4>
+							</div>
+
+							<div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
+								<div class="flexslider">
+									<div class="slider-wrap">
+										<div class="slide">
+											<div class="testi-content">
+												<p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
+												<div class="testi-meta">
+													Steve Jobs
+													<span>Apple Inc.</span>
+												</div>
+											</div>
+										</div>
+										<div class="slide">
+											<div class="testi-content">
+												<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+												<div class="testi-meta">
+													Collis Ta'eed
+													<span>Envato Inc.</span>
+												</div>
+											</div>
+										</div>
+										<div class="slide">
+											<div class="testi-content">
+												<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
+												<div class="testi-meta">
+													John Doe
+													<span>XYZ Inc.</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div-->
+
+						</div>
+
+					</div>
+
+				</section>
+
+				
+
 			</div>
-		</section>
-		<!-- End About Page -->
-		
-		<!-- Start Services Page -->
-		
-		<section id="services" class="page">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
 
-						<div class="title">What we do</div>
-						<hr>
-									<!-- Start Tabs -->
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyrights &copy; 2017 All Rights Reserved by Bicyclize<br>
 						
-						<div class="tabs">
-							<ul>
-								<li id="tab1" class="current">Workshops</li>
-								<li id="tab2">Assess Conditions</li>
-								<li id="tab3">Consult and Implement</li>
-								<li id="tab4">Verify, Analyse, Enhance</li>
-							</ul>
-							<div class="tab-content-wrp">
-		    					<div id="tab1-content" class="tab-content active">
-										<div class="container">	
-											<div class="row">
-												
-												<div class="row">
-													<div class="span3">
-													
-														<img src="images/arrow1.png" width="200" height="200" style="margin: 20px 80px 0px 80px">
-														<hr class="visible-phone">
-													</div>
-													<div class="span6">
-														
-														<h4>Engaging discussion between</h4> 
-														<h5>Stakeholders </h5>
-														<h5>Academia</h5>
-														<h5>Business</h5>
-														<h5>Municipality</h5>
-													</div>
-													
-												</div>
-											</div>
-										</div>
-		    					</div>
-		    					<div id="tab2-content" class="tab-content">
-		    							<div class="container">	
-											<div class="row">
-												<div class="row">
-													<div class="span3">
-													
-														<img src="images/arrow2.png"  width="200" height="200" style="margin: 20px 80px 0px 80px">
-														<hr class="visible-phone">
-													</div>
-													<div class="span9">
-														
-														<h4>Enabling local work</h4>
-														<h4>Demographic analysis</h4>
-														<h4>Physical environment analysis</h4>
-														<h4>Transport model</h4>
-														
-													</div>
-												</div>
-											</div>
-										</div>
-		    					</div>
-		    					<div id="tab3-content" class="tab-content">
-		    							<div class="container">	
-											<div class="row">
-												<div class="row">
-													<div class="span3">
-													
-														<img src="images/arrow3.png" width="200" height="200" style="margin: 20px 80px 0px 80px">
-														<hr class="visible-phone">
-													</div>
-												
-													<div class="span4">
-																
-																<h4>Where to expand next?</h4>
-																<h4>Which strategic areas to target next?</h4>
-																	
-														</div>
-													<div class="span4">
-															<h4>Asset management</h4>
-															<h4>Bicycle export</h4>
-															<h4>Cycle scheme management</h4>
-													</div>
-												</div>
-											</div>
-										</div>
-		    					</div>
-		    					
-		    					<div id="tab4-content" class="tab-content">
-		    							<div class="container">	
-											<div class="row">
-												<div class="row">
-													<div class="span3">
-													
-														<img src="images/arrow4.png" width="200" height="200" style="margin: 20px 80px 0px 80px">
-														<hr class="visible-phone">
-													</div>
-													<div class="span9">
-														
-														<h4>Deploying computer vision to collect data</h4>
-														<h4>Assess and analyse local infrastructure conditions</h4>
-														<h4>Transport analytics</h4>
+					</div>
 
-														
-													</div>
-												</div>
-											</div>
-										</div>
-		    					</div>
-							</div>
-						</div>
-				</div>
-				</div>
-				</div>
-
-		</section>
-						<!-- End Tabs -->
-			<!-- End Tabs -->
-<section id="tools" class="page page">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title">Tools</div>
-						<hr>	
 			
-								<div class="portfolio-slider flexslider">
-									<ul class="slides">
-										<li>
-											<div class="slider-text">
-												<a  class="slider-title">Imagery analysis</a>
-												<div class="slider-desc">Building a community with <a href="http://www.Mapillary.com">Mapillary</a> to collect local infrastructure data and assess transport conditions</div>
-											</div>
-											<img src="img/sliders/segnet.jpg" target="_blank" alt="" />
-										</li>
-										<li>
-											<div class="slider-text">
-												<a class="slider-title">Cycling potential</a>
-												<div class="slider-desc">Providing <a>GIS</a> services to assess local demographic and infrastructural conditions</div>
-											</div>
-											<img src="img/sliders/noCars.jpg" >
-										</li>
-										 <li>
-											<div class="slider-text">
-												<a class="slider-title">Modelling services</a>
-												<div class="slider-desc">Accounting for local results we can support decisions with modelling skills and competitive <a href="http://matsim.org/">open source</a> tools.</div>
-											</div>
-											<img src="img/sliders/matsim.jpg" >
-										</li>
-										 <li>
-											<div class="slider-text">
-												<a class="slider-title">Cycle scheme</a>
-												<div class="slider-desc">Providing community driven mobile driven cycle scheme networks with or without bicycles, thanks to our partners <a href="http://mobilock.nl/">Mobilock</a> and <a href="http://amsterdam.nl/">Gemeente Amsterdam</a> </div>
-											</div>
-											<img src="img/sliders/mobi.png" >
-										</li>
-										<li>
-											<div class="slider-text">
-												<a class="slider-title">Visualising mobility</a>
-												<div class="slider-desc">We are working closely with our partner <a href="http://www.dantesoftware.com">Fileradar BV</a> to feed this new data to Dantesoftware to provide valuable insights at micro and macro level for merchants and municipalities to understand traffic flow.</div>
-											</div>
-											<img src="img/sliders/dante.jpg" width="300" height="300" style="margin: 0px 0px" href="http://www.dantesoftware.com" target="_blank" alt="" />
-										</li>
-										
-									</ul>
-								<!--div
-								<div class="row">
-								<div class="span3">
-									<h5>Business</h5>
-									<p>The micro level result of our data collection allows us to provide specific traffic information for merchants and local service providers to target their audience.</p>
-									<hr class="gray margin20 visible-phone">
-								</div>
-								<div class="span3">
-									<h5>Municipal clients</h5>
-									<p>Our hollistic approach allows us to provide macro level advisory on transport policy to municipal stake holders.</p>
-									<hr class="gray margin20 visible-phone">
-								</div>
-								<div class="span3">
-									<h5>Data collection</h5>
-									<p>May it be radar detectors or imagery data source, we are prepared to turn raw data into quantifiable information.</p>
-									<hr class="gray margin20 visible-phone">
-								</div>
-								<div class="span3">
-									<h5>Analytics and forecasting</h5>
-									<p>Should you requiure GIS or dynamic mapping data visualisation we are ready with <a  href="http://www.dantesoftware.com">Fileradar's Dantesoftware</a> to analyse and provide forecasting for the entire transport network.</p>
-								</div-->
-							</div>
-						</div>
 				</div>
-			</div>
-		</section>
-		<!-- End Services 
-	<div class="row slider-services">
-								<section id="jms-slideshow" class="jms-slideshow">
-								
-								
-									
-									<div class="step" data-color="color-4" data-x="-100" data-z="1500" data-rotate="170">
-										<div class="jms-content">
-											<h3>Data collection</h3>
-										<p>Quantifying modality from CCTV analysis</p>
-										</div>
-										<img src="images/cctv.png" />	
-									</div>
-									<div class="step" data-color="color-5" data-x="3000">
-										<div class="jms-content">
-											<h3>Imagery analysis</h3>
-										<p>Deployed or existing camera network feeds</p>
-										</div>
-										<img src="images/dam2.png" />
-									</div>
-									<div class="step" data-color="color-1" data-x="4500" data-z="1000" data-rotate-y="45">
-										<div class="jms-content">
-											<h3>Quantifying image content</h3>
-										<p>Based on Segnet's Deep Convolutional Architecture</p>
-										<p><a class="external" href="http://mi.eng.cam.ac.uk/projects/segnet/demo.php">Read more...</a></p>
-										</div>
-										<img src="images/damSeg2.png" />
-									</div>
-									<div class="step" data-color="color-4" data-x="-100" data-z="1500" data-rotate="170">
-										<div class="jms-content">
-											<h3>Cycling visualisation</h3>
-										<p>Leveraging Fileradar's Dantesoftware, holistic transport analytics provided inclusive of all transport modes</p>
-										<p><a class="external" href="http://acc.dantesoftware.com/">Explore more...</a></p></div>
-										<img src="images/adapt.png" />	
-									</div>
 
+			</div><!-- #copyrights end -->
 
-		Page -->
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
 
 	
-		
-		<!-- Start Parallax -->
-		<section id="parallax1">
-			<div class="bg4"></div>
-			<div class="pattern"></div>
-			<div class="container">
-				<div class="row">
-					<div class="span4 right-pull">
-						<div id="twitter-parallax" class="vertical-text">
-							<a class="twitter-timeline" data-height="300" data-theme="light" data-link-color="#84fc7b" href="https://twitter.com/bicyclize"></a>
-							
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Parallax -->
-
-
-
-					
-									
-		
-				<!-- Start Portfolio Page -->
-		<section id="portfolio" class="page">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title">Portfolio</div>
-						<hr>
-						
-
-						<!-- Start Filters
-		                <ul class="option-set" data-option-key="filter">
-					    	<li><a class="selected" href="#filter" data-option-value="*"><span></span>All projects</a></li>
-							<li><a href="#filter" data-option-value=".site"><span></span>Web-sites</a></li>
-							<li><a href="#filter" data-option-value=".app"><span></span>Mobile Apps</a></li>
-							<li><a href="#filter" data-option-value=".campaign"><span></span>Ad Campaign</a></li>
-							<li><a href="#filter" data-option-value=".strategy"><span></span>Strategy</a></li>
-				    	</ul>
-				    	End Filters -->
-				    	
-				    	<div id="posts" class="row isotope ">
-							<!-- Start Project -->
-							<div class="post item span4 isotope-item strategy">
-			    			<a href="img/sliders/CarsRegisteredtoWards.jpg" rel="group1" class="project-wrp fancybox" title="London Parking provision">
-			    					<div class="profile-photo">
-				    					<div class="profile-icon">&#0102;</div>
-										<img src="img/sliders/CarsRegisteredtoWards.jpg" alt="Using the 2011 Census data we assessed demand for parking provision in London">
-									</div>
-									<div class="project-client">Mayor of London</div>
-									<div class="project-name">London parking</div>
-									<hr class="mini">
-									<div class="project-date">October 2015</div>
-			    			</a>
-						</div>
-						<div style="display:none"><a href="img/sliders/populationInLowPTAL.jpg" rel="group1" class="project-wrp fancybox" title="London parking"><img src="img/projects/thumb1.jpg" alt="Using QGIS for analysing spatial data we concluded our results in these choropleth maps to assess wheather the Mayor's new policy to provide two parking spots per new housing is appropriate."></a></div>
-		    			<div style="display:none"><a href="img/sliders/noCarHouseholds.jpg" rel="group1" class="project-wrp fancybox" title="London parking"><img src="img/projects/thumb1.jpg" alt="Using QGIS for analysing spatial data we concluded our results in these choropleth maps to assess wheather the Mayor's new policy to provide two parking spots per new housing is appropriate."></a></div>
-		    			<div style="display:none"><a href="img/sliders/PercentageOfResidentsWithMaximumOneVehiclePerHousehold.jpg" rel="group1" class="project-wrp fancybox" title="London parking"><img src="img/projects/thumb1.jpg" alt="Using QGIS for analysing spatial data we concluded our results in these choropleth maps to assess wheather the Mayor's new policy to provide two parking spots per new housing is appropriate."></a></div>
-		    			
-							<!-- End Project -->
-											<!-- Start Project -->
-							<div class="post item span4 isotope-item strategy">
-			    			<a href="img/sliders/demographic.png" rel="group1" class="project-wrp fancybox" title="Geographic spatial correlation">
-			    					<div class="profile-photo">
-				    					<div class="profile-icon">&#0097;</div>
-										<img src="img/sliders/demographic.png" alt="We used R to assess statistical data of transport mode choice, demographic attributes and location to see where and how these variables correlate with each other.">
-									</div>
-									<div class="project-client">UCL</div>
-									<div class="project-name">Geographic spatial correlation</div>
-									<hr class="mini">
-									<div class="project-date">July 2014</div>
-			    			</a>
-						</div>
-							<!-- End Project -->
-							<!-- Start Project -->
-							<div class="post item span4 isotope-item spatial">
-				    			<a href="images/mortgagesLondon.gif" rel="group4" class="project-wrp fancybox" title="Dante Housing" alt="Changes in mortgage pricing in Greater London">
-				    					<div class="profile-icon">&#0100;</div>
-				    					<div class="profile-name">Dante Housing</div>
-				    					<div class="profile-desc">
-					    					
-										<img src="images/mortgagesLondon.gif" alt="QGIS choleropath for Fileradar's housing project to visualise the housing market in Greater London.">
-										</div>
-										<div class="project-client">Dantesoftware</div>
-										
-										<hr class="mini">
-										<div class="project-date">February 2016</div>
-				    			</a>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Portfolio Page -->
-
-<!-- Start partners Page -->
-		<section id="Partners" class="page page-gray">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title">Partners</div>
-						<hr>
-				    			<div id="posts" class="row ">
-						
-							<!-- Start Project -->
-							<div class="post item span4">
-				    			<a href="https://youtu.be/uSPXhmm0DEY" rel="group1" class="project-wrp fancybox-media" title="Segnet">
-								<div class="profile-icon">&#0098;</div>
-								
-							
-								<div class="profile-name">Cambridge University</div>
-								<div class="profile-desc">
-									<p>The opensourced product of the Segnet project allowed wider application of imagery analysis.</p>
-								</div>	
-								<hr class="mini">
-								<div class="project-date">mi.eng.cam.ac.uk/projects/segnet/</div>
-								
-
-								</a>
-							</div>
-								<!-- End Project -->
-							<!-- Start Project -->
-							<div class="post item span4 isotope-item traffic">
-				    			<a href="http://acc.dantesoftware.com" rel="group2" class="project-wrp fancybox fancybox.iframe" title="Access">
-				    					<div class="profile-icon">&#0047;</div>
-								<div class="profile-name">Dantesoftware</div>
-								<div class="profile-desc">
-									<p>Dante is a modular server platform from the ground up written in Java using the OSGI standard. Currently there are well over a hundred modules that can be combined in different ways to achieve a broad range of functionality. Through the link you can access one of the configurations.</p>
-								</div>	
-								<hr class="mini">
-								<div class="project-date">acc.Dantesoftware.com</div>
-								
-
-								</a>
-							</div>
-					<!-- End Project -->
-					
-					<!-- Start Project -->
-							<div class="post item span4 isotope-item traffic">
-				    			<a href="http://www.Mobilock.nl" rel="group2" class="project-wrp fancybox fancybox.iframe" title="Access">
-				    					<div class="profile-icon">&#0047;</div>
-								<div class="profile-name">Mobilock</div>
-								<div class="profile-desc">
-									<p>Enabling community and business driven cycle scheme systems. Keyless smart locks for all.</p>
-								</div>	
-								<hr class="mini">
-								<div class="project-date">www.mobilock.nl</div>
-								
-
-								</a>
-							</div>
-					<!-- End Project -->
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>	
-		<!-- End partners Page -->
-	
-
-
-		<!-- Start Contact Page -->
-		<section id="contact" class="page page-gray">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title center-title">Contact us</div>
-						<hr>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span8">
-						<div class="row">
-						<div id="mapid" class="span8" style="height: 400px">
-						</div>
-						</div>
-						<!--div class="span3 left-pull">
-							<label>Your name</label>
-							<input class="span3" type="text" name="name" placeholder="Your Name">
-						</div>
-						<div class="span3">
-							<label>Your e-mail</label>
-							<input class="span3 right-pull" type="text" name="email" placeholder="Your E-mail">
-						</div>
-					
-						<div class="span6 textarea-margin">
-							<label>Message</label>
-							<textarea class="span6" rows="4" name="message" placeholder="Message"></textarea>
-							<button type="submit" class="btn"><i class="web-icon">8</i>Send Message</button>
-						</div>
-					</div-->
-					</div>
-					<div class="span4 address">
-								<div class="contact-name">Bicyclize</div>
-											
-								<h5>Our location</h5>
-								<h5>A-Lab</h5>
-											<p>Overhoeksplein 2</p>
-											<p>1031 KS, Amsterdam</p>
-											
-								<hr class="gray">
-								<h5>E-mail</h5>
-								<p>info@bicyclize.com</p>
-								<hr class="gray">
-								
-								<ul class="social-icons">
-									<li><a href="https://twitter.com/bicyclize">&#229;</a></li>
-									<li><a href="https://instagram.com/bicyclize">ë</a></li>
-									<!--li><a href="#">ä</a></li> facebook
-									<li><a href="#">è</a></li  google-->
-								</ul>
-					
-						</div>
-					
-					</div>
-				</div>
-		
-		</section>
-		<!-- End Contact Page -->
-		
-		
-		<section id="copyright">
-			© 2016 Bicyclize
-		</section>
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
 
 	
-	</div>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>	
-	<script src="js/jquery.sticky.js"></script><!-- Sticky Navigation -->
-	<script src="js/jquery.scrollTo.js"></script><!-- Smooth Scrolling -->
-	<script src="js/jquery.nav.js"></script><!-- One Page Navigation -->
-	<script src="js/selectnav.min.js"></script><!-- Mobile Navigation -->
-	<script src="js/jquery.flexslider.js"></script><!-- FlexSlider 2 -->
-	<script src="js/jquery.parallax-1.1.3.js"></script><!-- Parallax -->
-	<script src="js/jquery.isotope.min.js"></script><!-- Isotope Portfolio -->
-	<script src="js/mql.js"></script><!-- Isotope Fix -->
-	<script src="js/shortcodes.js"></script> <!-- Shortcodes -->
-	<script src="js/jquery.fancybox.pack.js"></script><!-- Fancybox -->
-	<script src="js/jquery.fancybox-media.js"></script><!-- Fancybox Media Helper -->
-	<script src="js/jflickrfeed.js"></script><!-- Flickr Feed -->
-	<script src="js/settings.js"></script> <!-- JS Options -->
-	<script src="js/contact.js"></script> <!-- Feedback form -->
-	<script type="text/javascript" src="js/jmpress.min.js"></script>
-	<script type="text/javascript" src="js/jquery.jmslideshow.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			var jmpressOpts	= {
-				animation		: { transitionDuration : '0.8s' }
-				};
-												
-			$( '#jms-slideshow' ).jmslideshow( $.extend( true, { jmpressOpts : jmpressOpts }, {
-				autoplay	: true,
-				bgColorSpeed: '0.8s',
-				arrows		: false
-			}));
-												
-			});
-	</script>
-	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
-	<script>
-
-		var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
-});
-
-		var map = L.map('mapid', {
-		  scrollWheelZoom: false,
-		  center: [52.38472, 4.90368],
-		  zoom: 13
-		});
-		L.marker([52.38398, 4.90304]).addTo(map)
-			.bindPopup("<b>Bicyclize</b><br />A-Lab");
-		
-		map.addLayer(layer);
-	</script>
 
 </body>
-
 </html>
