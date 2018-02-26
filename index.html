@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
     <head>
+    	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114793359-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-114793359-1');
+		</script>
+
         <meta charset="utf-8">
         <title>bicyclize</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +27,9 @@
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
         <link href="css/fontawesome-all.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/fa-brands.css" rel="stylesheet" type="text/css" media="all" />
-
-        
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		
-		 <script src="//www.powr.io/powr.js?external-type=html"></script> 
+         <script src="https://snapwidget.com/js/snapwidget.js"></script>
  
     </head>
     <body class=" " data-smooth-scroll-offset='64'>
@@ -113,13 +119,6 @@
                 </div>
                 <!--end of container-->
             </section>
-
-             <section class="imagebg parallax">
-                <div class="background-image-holder">
-                    <img alt="background" src="img/kidsLight.jpg" />
-                </div>
-                
-            </section>
             
             <section class="bg--secondary">
                 <div class="container">
@@ -139,7 +138,10 @@
            
 
              
-            <section class="bg--secondary">
+            <section class="cover cover-features imagebg space--lg" data-overlay="5">
+                <div class="background-image-holder">
+                    <img alt="background" src="img/kidsLight.jpg" />
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -148,7 +150,31 @@
                                 <div class="feature__body">
                                     <h5>Efficiency</h5>
                                     <p>
-                                        Jump start your project with Stack's diverse array of beautiful pre-built templates
+                                        Cycling is the most efficient mode of mobility. The least energy input to source and tool allows the furthest ride compared to any other mode.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-2 boxed boxed--border">
+                                <i class="fas fa-shopping-cart fa-3x color--primary"></i>
+                                <div class="feature__body">
+                                    <h5>Shopping</h5>
+                                    <p>
+                                        More customers passing shop windows, more space for customer parking. Cyclists help revitalising the high street and keeping retail income in locality.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-2 boxed boxed--border">
+                                <i class="fas fa-briefcase fa-3x color--primary"></i>
+                                <div class="feature__body">
+                                    <h5>Business</h5>
+                                    <p>
+                                        Cycling means business. Those who cycle to work report less absence compared to non-cycling colleages in the Netherlands.  
                                     </p>
                                 </div>
                             </div>
@@ -192,30 +218,7 @@
                             </div>
                             <!--end feature-->
                         </div>
-                        <div class="col-md-4">
-                            <div class="feature feature-2 boxed boxed--border">
-                                <i class="fas fa-shopping-cart fa-3x color--primary"></i>
-                                <div class="feature__body">
-                                    <h5>Shopping</h5>
-                                    <p>
-                                        More customers passing shop windows, more space for customer parking. 
-                                    </p>
-                                </div>
-                            </div>
-                            <!--end feature-->
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature feature-2 boxed boxed--border">
-                                <i class="fas fa-briefcase fa-3x color--primary"></i>
-                                <div class="feature__body">
-                                    <h5>Business</h5>
-                                    <p>
-                                        Cycling means business. Those who cycle to work report less absence compared to non-cycling colleages in the Netherlands.  
-                                    </p>
-                                </div>
-                            </div>
-                            <!--end feature-->
-                        </div>
+                        
                     </div>
                     <!--end of row-->
                 </div>
@@ -229,7 +232,9 @@
 	                        <div class="heading-block">
 	                            <h2>Follow us for updates and more</h2>
 	                        </div>
-	                        <div class="powr-social-feed" id="25918b00_1519592364"></div>
+	                       <!-- SnapWidget -->
+
+							<iframe src="https://snapwidget.com/embed/513065" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
 	                        <a class="btn btn--icon bg--instagram type--uppercase" href="https://www.instagram.com/bicyclize/">
 	                            <span class="btn__text">
 	                                <i class="socicon socicon-instagram"></i>
@@ -398,13 +403,10 @@
                 <!--end of container-->
             </section>
 
-            <section class="imagebg parallax">
+            <section class="cover cover-features imagebg space--lg" data-overlay="5">
                 <div class="background-image-holder">
                     <img alt="background" src="img/restaurants.jpg" />
                 </div>
-                
-            </section>
-            <section class="bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -413,11 +415,11 @@
                                 <ul class="slides">
                                     <li class="col-md-4 col-12">
                                         <div class="feature feature-1">
-                                            <img alt="Image" src="img/budapest.png" />
+                                            <img alt="Image" src="img/budapest.png" height=250px />
                                             <div class="feature__body boxed boxed--border">
                                                 <h5>Budapest Transit integration</h5>
                                                 <p>
-                                                    Redevelopping the Hungarian capitals transit network to accomodate cycling
+                                                    Redevelopping the Hungarian capital's transit network so that more people have better access to mobility
                                                 </p>
                                                 <a href="https://blog.bicyclize.com">
                                                     Read here
@@ -428,11 +430,12 @@
                                     </li>
                                     <li class="col-md-4 col-12">
                                         <div class="feature feature-1">
-                                            <img alt="Image" src="img/moscow2.png" />
+                                            <img alt="Image" src="img/moscow2.png"   />
                                             <div class="feature__body boxed boxed--border">
                                                 <h5>Moscow Bike-Transit Case</h5>
                                                 <p>
-                                                    How to make a megalopolis cycle friendly. It works for 17mln people in the Netherlands, should work for 13mln in Moscow.
+                                                    How to make a megalopolis cycle friendly. It works for 17mln people in the Netherlands, should work for 13mln in Moscow.<br>
+                                                    The secret lies in good integration of high-level transit (train, BRT, metro etc) and cycling.
                                                 </p>
                                                 <a href="https://blog.bicyclize.com">
                                                     Read here
@@ -443,7 +446,7 @@
                                     </li>
                                     <li class="col-md-4 col-12">
                                         <div class="feature feature-1">
-                                            <img alt="Image" src="img/maltaBRT.png" />
+                                            <img alt="Image" src="img/maltaBRT.png" height=250px />
                                             <div class="feature__body boxed boxed--border">
                                                 <h5>Malta Transport Planning</h5>
                                                 <p>
@@ -458,7 +461,7 @@
                                     </li>
                                     <li class="col-md-4 col-12">
                                         <div class="feature feature-1">
-                                            <img alt="Image" src="img/oneCar.png" />
+                                            <img alt="Image" src="img/oneCar.png" height=250px/>
                                             <div class="feature__body boxed boxed--border">
                                                 <h5>London parking assessment</h5>
                                                 <p>
