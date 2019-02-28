@@ -33,6 +33,33 @@
  
     </head>
     <body class=" " data-smooth-scroll-offset='64'>
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="177914139776570"
+  theme_color="#417505"
+  logged_in_greeting="Hi, can I help?"
+  logged_out_greeting="Hi, can I help?">
+</div>
         
         <div class="nav-container ">
             <div class="bar bar--mobile-sticky visible-xs" data-scroll-class="100px:pos-fixed">
@@ -77,14 +104,15 @@
                             <div class="bar__module">
                             	<ul class="menu-horizontal">
 									<li>
+										<a href="#Services">Services</a>
+									</li>
+									<li>
 										<a href="#Why">Why</a>
 									</li>
-									<li>
+									<!--li>
 										<a href="#What">What</a>
-									</li>
-									<li>
-										<a href="#How">How</a>
-									</li>
+									</li-->
+									
 									<li>
 										<a href="#Projects">Projects</a>
 									</li>
@@ -137,7 +165,7 @@
             <!--end bar-->
         </div>
         <div class="main-container">
-            <section class="text-center">
+            <section class="text-center height-80 ">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -149,11 +177,7 @@
                             <p class="lead">
                                 The hollistic approach to create human shaped urban environments.
                             </p>
-                            <a class="btn btn--primary type--uppercase inner-link" href="https://join.slack.com/t/bicyclize/shared_invite/enQtMzE0MzkwMjM4OTc3LTMzZWNhYWU4ZjU5NDhjMWM0MWQxYjU3YWEzZjUwZDRlZWM5OGIwZDYzNTRkODA2YWI1NGE1MWYzZTI2NzY0OGQ" target="_blank">
-                                <span class="btn__text">
-                                    Join the discussion on Slack
-                                </span>
-                            </a>
+                            <div class="typeform-widget" data-url="https://peterbiczok.typeform.com/to/HBiJi6" data-transparency="50" style="width: 100%; height: 350px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=HBiJi6&utm_source=typeform.com-13437308-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
                         </div>
                     </div>
                     <!--end of row-->
@@ -161,6 +185,158 @@
                 <!--end of container-->
             </section>
             
+
+            <section id="Services" class="bg--secondary">
+
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-12">
+                            <h2>Services</h2>
+                            <p class="lead text-center">
+                              Bicyclize provides diverse services from communication to GIS analytics and urban design evaluation.
+                            </p>
+                        </div>
+
+                        
+                            
+
+                        <div class="col-md-12 col-lg-12">
+                                <div class="imagebg boxed boxed--lg" data-overlay="7">
+                                    <div class="background-image-holder">
+                                        <img alt="background" src="img/moscow3.png" />
+                                    </div>
+                                    <div class="container">
+                                        <h5>Transit network integration</h5>
+                                        <h4>BikeTransit Consultancy</h4>
+                                        <p>
+                                            The secret element to make cycling work everywhere, even in massive megacities. <br>
+                                            Integrating cycling to transit systems improves the efficiency of both, while creates healthier, more social environments and more efficient land uses. <br>
+                                            Adaptable and scalable
+
+
+                                        </p>
+                                        <a class="btn btn--primary" href="https://blog.bicyclize.com">
+                                            <span class="btn__text">
+                                                Read more
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                                <div class="imagebg boxed boxed--lg" data-overlay="7">
+                                    <div class="background-image-holder">
+                                        <img alt="background" src="img/disability.png" />
+                                    </div>
+                                    <div class="container">
+                                        <h5>Infrastructure and Design</h5>
+                                        <p>
+                                            Infrastructure that works for you and for your community. We do not believe in one fits all measures.
+                                        </p>
+                                        <a class="btn btn--primary" href="https://view.publitas.com/bicyclize/vision-for-cycling-sliema/" target="_blank">
+                                            <span class="btn__text">
+                                                Read more
+                                            </span>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        
+                        <div class="col-md-6 col-lg-4">
+                                <div class="imagebg boxed boxed--lg" data-overlay="7">
+                                    <div class="background-image-holder">
+                                        <img alt="background" src="img/road4Cars.jpeg" />
+                                    </div>
+                                    <div class="container">
+                                        <h5>GIS and Data analytics</h5>
+                                        <p>
+                                            Spatial and travel analytics, real-time and future demand predictions. 
+                                        </p>
+                                        <a class="btn btn--primary" href="https://fileradar.nl">
+                                            <span class="btn__text">
+                                                Read more
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                                <div class="imagebg boxed boxed--lg" data-overlay="7">
+                                    <div class="background-image-holder">
+                                        <img alt="background" src="img/delivery.jpg" />
+                                    </div>
+                                    <div class="container">
+                                        <h5>Bicycle share schemes</h5>
+                                        <p>
+                                            Implementing the right system for your business/phisical/political environment. Your system supporting your community. 
+                                        </p>
+                                        <a class="btn btn--primary" href="https://mobilock.nl">
+                                            <span class="btn__text">
+                                                Read more
+                                            </span>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                                <div class="imagebg boxed boxed--lg" data-overlay="7">
+                                    <div class="background-image-holder">
+                                        <img alt="background" src="img/kids.jpg" />
+                                    </div>
+                                    <div class="container">
+                                        <h5>Education</h5>
+                                        <p>
+                                            Crucial element of creating a successful cycling culture. How to engage the young, seniors or newcomers. 
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                                <div class="imagebg boxed boxed--lg" data-overlay="7">
+                                    <div class="background-image-holder">
+                                        <img alt="background" src="img/cargo.png" />
+                                    </div>
+                                    <div class="container">
+                                        <h5>Communication</h5>
+                                        <p>
+                                            May you need stories or numbers to tell, your audience receives the right message. 
+                                        </p>
+                                        <a class="btn btn--primary" href="https://blog.bicyclize.com">
+                                            <span class="btn__text">
+                                                See our blog!
+                                            </span>
+                                        </a>
+                                       
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                                
+                                    
+                           
+			                            <a class="btn btn--primary type--uppercase inner-link" href="https://join.slack.com/t/bicyclize/shared_invite/enQtMzE0MzkwMjM4OTc3LTMzZWNhYWU4ZjU5NDhjMWM0MWQxYjU3YWEzZjUwZDRlZWM5OGIwZDYzNTRkODA2YWI1NGE1MWYzZTI2NzY0OGQ" target="_blank">
+			                                <span class="btn__text">
+			                                    Join the discussion on Slack now
+			                                </span>
+			                            </a>
+                       
+                              
+                        </div>
+                        
+                    </div>
+
+                 
+                    <!--end of row-->
+
+                </div>
+                <!--end of container-->
+            </section>
             <section id="Why" class="bg--secondary">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -289,13 +465,13 @@
 
 
 
-            <section id="What" class="bg">
+            <!--section id="What" class="bg">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-6 col-lg-6">
                             <h2>What</h2>
                             <p class="lead">
-                              Bicyclize is a a social entrepreneurship of advocates, academics, consultants, planners, commuters, enthusiast, basically of everyone from all cycles of life. <br>
+                              Bicyclize is urbanism consultancy focusing on all aspects to make our cities more cycling friendly. <br>
                               <h3>We do not want everyone to cycle. We want to ensure that everyone has the choice to cycle. </h3>
                               <br>
                               When travellers have choices they tend to chose the option that is the most efficient/comfortable for them. Making cycling convenient for short trips, means that less cars will be on the roads making travel more convenient for those needing to make longer trips in cars or public transit. 
@@ -308,157 +484,14 @@
 	                        <div class="tweets-feed slider" data-feed-name="bicyclize" data-amount="8" data-paging="true"></div>
 	                    </div>
                     </div>
-                    <!--end of row-->
+                    
                 </div>
-                <!--end of container-->
-            </section>
+              
+            </section-->
 
 
 
-            <section id="How" class="bg--secondary">
-
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-12">
-                            <h2>How: Beyond Consultancy</h2>
-                            <p class="lead text-center">
-                              Bicyclize provides a platform for discussion and knowledge transfer. Our goal is to empower everyone to be able to discuss and make democratic decisions on usage of their own environment and public spaces. 
-                            </p>
-                        </div>
-
-                        <div class="col-md-10 col-lg-12">
-                            <h3>Themes</h3>
-                            
-                        </div>
-                            
-
-                        <div class="col-md-12 col-lg-12">
-                                <div class="imagebg boxed boxed--lg" data-overlay="7">
-                                    <div class="background-image-holder">
-                                        <img alt="background" src="img/moscow3.png" />
-                                    </div>
-                                    <div class="container">
-                                        <h5>Transit network integration</h5>
-                                        <h4>BikeTransit</h4>
-                                        <p>
-                                            The secret element to make cycling work everywhere, even in massive megacities. <br>
-                                            Integrating cycling to transit systems improves the efficiency of both, while creates healthier, more social environments and more efficient land uses. <br>
-                                            Adaptable and scalable
-
-
-                                        </p>
-                                        <a class="btn btn--primary" href="https://blog.bicyclize.com">
-                                            <span class="btn__text">
-                                                Read more
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                                <div class="imagebg boxed boxed--lg" data-overlay="7">
-                                    <div class="background-image-holder">
-                                        <img alt="background" src="img/disability.png" />
-                                    </div>
-                                    <div class="container">
-                                        <h5>Infrastructure and Design</h5>
-                                        <p>
-                                            Infrastructure that works for you and for your community. We do not believe in one fits all measures.
-                                        </p>
-                                        <a class="btn btn--primary" href="https://view.publitas.com/bicyclize/vision-for-cycling-sliema/" target="_blank">
-                                            <span class="btn__text">
-                                                Read more
-                                            </span>
-                                        </a>
-                                        
-                                    </div>
-                                </div>
-                        </div>
-                        
-                        
-                        <div class="col-md-6 col-lg-4">
-                                <div class="imagebg boxed boxed--lg" data-overlay="7">
-                                    <div class="background-image-holder">
-                                        <img alt="background" src="img/road4Cars.jpeg" />
-                                    </div>
-                                    <div class="container">
-                                        <h5>GIS and Data analytics</h5>
-                                        <p>
-                                            Spatial and travel analytics, real-time and future demand predictions. 
-                                        </p>
-                                        <a class="btn btn--primary" href="https://future-traffic.com">
-                                            <span class="btn__text">
-                                                Read more
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                                <div class="imagebg boxed boxed--lg" data-overlay="7">
-                                    <div class="background-image-holder">
-                                        <img alt="background" src="img/delivery.jpg" />
-                                    </div>
-                                    <div class="container">
-                                        <h5>Bicycle share schemes</h5>
-                                        <p>
-                                            Implementing the right system for your business/phisical/political environment. Your system supporting your community. 
-                                        </p>
-                                        
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                                <div class="imagebg boxed boxed--lg" data-overlay="7">
-                                    <div class="background-image-holder">
-                                        <img alt="background" src="img/kids.jpg" />
-                                    </div>
-                                    <div class="container">
-                                        <h5>Education</h5>
-                                        <p>
-                                            Crucial element of creating a successful cycling culture. How to engage the young, seniors or newcomers. 
-                                        </p>
-                                        
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                                <div class="imagebg boxed boxed--lg" data-overlay="7">
-                                    <div class="background-image-holder">
-                                        <img alt="background" src="img/cargo.png" />
-                                    </div>
-                                    <div class="container">
-                                        <h5>Communication</h5>
-                                        <p>
-                                            May you need stories or numbers to tell, your audience receives the right message. 
-                                        </p>
-                                       
-                                    </div>
-                                </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                                
-                                    
-                           
-			                            <a class="btn btn--primary type--uppercase inner-link" href="https://join.slack.com/t/bicyclize/shared_invite/enQtMzE0MzkwMjM4OTc3LTMzZWNhYWU4ZjU5NDhjMWM0MWQxYjU3YWEzZjUwZDRlZWM5OGIwZDYzNTRkODA2YWI1NGE1MWYzZTI2NzY0OGQ" target="_blank">
-			                                <span class="btn__text">
-			                                    Join the discussion on Slack now
-			                                </span>
-			                            </a>
-                       
-                              
-                        </div>
-                        
-                    </div>
-
-                 
-                    <!--end of row-->
-
-                </div>
-                <!--end of container-->
-            </section>
+            
 
             <section id="Projects" class="cover cover-features imagebg space--lg" data-overlay="5">
                 <div class="background-image-holder">
